@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+ <html lang="pt-pt">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/index.css">
+   
+    <meta name="description" content="Fotografia com maior relavancia, moda, dinheiro no bolso e investimento para ganhar dinheiro no instragram">
+   <title>Fotografia</title>
+ </head>
+ <body>
+  <h1>
+   <a href="#menu"><img src="./img/seta-esquerda.png"></a>
+ </h1>
+ <div class="icon">
+         <a href="https://avatars.githubusercontent.com/u/7680071?s=460&u=77f302630dbc4def328b38867f6e545bec900b79&v=4"><img src="https://avatars.githubusercontent.com/u/7680071?s=460&u=77f302630dbc4def328b38867f6e545bec900b79&v=4" class="icons"></a>
+
+         </div>
+   
+  <div class="texto">
+  <h1 class="h1">Eu sou o Paulo Nicolau Gaspar. entusiasta em fotografia de moda, produto e manipulação.
+   “Se sua fotografia não lhe faz justiça, certamente  estás a ser injusto com sua foto”.
+  </h1>
+  </div>
+   <div class="container">
+  
+<div class="popover" id="menu">
+ <div class = 'content'>
+  <a href="#" class="close"></a>
+   <div class = 'nav'>
+    <ul class = 'nav_list'>
+      
+      <div class = 'nav_list_item'>
+    <li><a href="#">Home</a></li>
+      </div>
+    
+    <div class = 'nav_list_item'>
+    <li><a href="Portfolio.html">Portfolio</a></li>
+      </div>
+     <div class = 'nav_list_item'>
+    <li><a href="contacto.html">Contacto</a></li>
+      </div>
+      
+  </ul>
+
+  </div>
+ </div>
+ </div>
+ </div>
+
+<script>
+  
+  function mudar(elemento){
+ const array = elemento.innerHTML.split('')
+ elemento.innerHTML=' '
+ 
+  array.forEach((listen, i)=>{
+    setTimeout(()=>{
+ elemento.innerHTML += listen;
+
+    },50 * i)
+  }) 
+  }
+  const titulo = document.querySelector('.h1');
+  mudar(titulo)
+</script>
+ </body>
+ </html>
